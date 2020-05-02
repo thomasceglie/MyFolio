@@ -6,6 +6,12 @@
 @import "./config/global.scss";
 @import "./config/keyframes.scss";
 @import "./config/mixins.scss";
+@import "./config/variables.scss";
 
 // BLOCS CONTENT
+@import "./blocs/header.scss";
 @import "./blocs/presentation.scss";
+@import "./blocs/projects.scss";
+@import "./blocs/social.scss";
+// PAGE ME
+@import "./blocs/me.scss";

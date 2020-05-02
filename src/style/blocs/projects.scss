@@ -1,0 +1,80 @@
+.projects {
+  width: 100%;
+  background-color: $black;
+}
+
+.project {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &-img__container {
+    width: 50%;
+    height: 70%;
+    //background-color: red;
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: transform 0.7s, opacity 0.7s;
+  }
+  &__infos {
+    height: 70%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: $white;
+    transform: translateX(300px);
+    opacity: 0;
+    transition: transform 0.7s, opacity 0.7s;
+  }
+  &__link {
+    width: 110px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: $white;
+    color: $black;
+    text-align: center;
+    &:hover {
+      text-decoration: underline;
+      color: white;
+      background-color: $black;
+      border: 1px solid $white;
+    }
+    &--text {
+      margin-top: 12px;
+      &::before {
+        content: '→  ';
+      }
+    }
+  }
+  &__name {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  &__type {
+    font-size: 2.188rem;
+    font-weight: 200;
+  }
+  &__work {
+    font-size: 1.563rem;
+    font-weight: 600;
+    line-height: 130%;
+  }
+  &__resume {
+    font-size: 0.9375rem;
+  }
+}
+
+.is-on-screen {
+  .project{
+    &-img__container {
+      transform: none;
+      opacity: 1;
+    }
+    &__infos {
+      transform: none;
+      opacity: 1;
+    }
+  }
+}

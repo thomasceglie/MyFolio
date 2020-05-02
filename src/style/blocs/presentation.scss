@@ -1,0 +1,58 @@
+.presentation {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  margin-bottom: 100px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8%;
+  }
+  &__element {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  &__text {
+    padding-right: 0px;
+    & > p {
+      color: $white;
+      margin-bottom: 40px;
+      &:nth-child(1) {
+        font-size: 3.125rem;
+      }
+      &:nth-child(2) {
+        font-size: 3.125rem;
+      }
+      &:nth-child(3) {
+        font-size: 1.25rem;
+        line-height: 150%;
+      }
+    }
+  }
+  &__scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    fill: $white;
+    margin-top: 4%;
+    &--arrow {
+      width: 5%;
+      margin-top: 1%;
+      animation: float 1s ease-in-out infinite;
+    }
+  }
+}
+
+.animoji {
+  max-width: 30%;
+  height: auto;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(10px);
+  }
+}
