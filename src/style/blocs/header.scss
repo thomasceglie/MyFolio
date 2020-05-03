@@ -4,22 +4,30 @@
   background-color: rgba($color: $black, $alpha: 0.9);
   z-index: 2;
   position: fixed;
+  /* transform: translateY(-72px);
+  transition: transform 0.8s; */
   // HEADER INDEX.HTML
   &__projects {
   display: flex;
   justify-content: space-around;
   padding-top: 3vh;
     & > .item:nth-child(1) {
+      width: 2%;
+      position: absolute;
+      left: 1%;
+      top: 25%;
+    }
+    & > .item:nth-child(2) {
       font-size: 1.875rem;
       color: $white;
       font-weight: 200;
     }
-    & > .item:nth-child(2) {
+    & > .item:nth-child(3) {
       font-size: 1.875rem;
       color: #4D4D4D;
       font-weight: 200;
     }
-    & > .item:nth-child(3) {
+    & > .item:nth-child(4) {
       font-size: 1.875rem;
       color: #4D4D4D;
       font-weight: 200;
@@ -31,30 +39,37 @@
     justify-content: space-around;
     padding-top: 3vh;
       & > .item:nth-child(1) {
+        width: 3%;
+        position: absolute;
+        left: 1%;
+        top: 20%;
+      }
+      & > .item:nth-child(2) {
         font-size: 1.875rem;
         color: #4D4D4D;
         font-weight: 200;
       }
-      & > .item:nth-child(2) {
+      & > .item:nth-child(3) {
         font-size: 1.875rem;
         color: $white;
         font-weight: 200;
       }
-      & > .item:nth-child(3) {
+      & > .item:nth-child(4) {
         font-size: 1.875rem;
         color: #4D4D4D;
         font-weight: 200;
       }
     }
-    // CONTACT ME.HTML
+    // HEADER CONTACT.HTML
   &__contact {
     display: flex;
     justify-content: space-around;
     padding-top: 3vh;
       & > .item:nth-child(1) {
-        font-size: 1.875rem;
-        color: #4D4D4D;
-        font-weight: 200;
+        width: 2%;
+        position: absolute;
+        left: 1%;
+        top: 25%;
       }
       & > .item:nth-child(2) {
         font-size: 1.875rem;
@@ -63,8 +78,17 @@
       }
       & > .item:nth-child(3) {
         font-size: 1.875rem;
+        color: #4D4D4D;
+        font-weight: 200;
+      }
+      & > .item:nth-child(4) {
+        font-size: 1.875rem;
         color: $white;
         font-weight: 200;
       }
     }
+}
+
+.header-is-on-screen {
+  transform: none;
 }

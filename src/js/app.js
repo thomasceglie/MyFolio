@@ -8,6 +8,7 @@ const skillTop = document.querySelector('.me__hover-top');
 const skillBottom = document.querySelector('.me__hover-bottom');
 const softImg = document.querySelector('.softskills__img');
 const hardImg = document.querySelector('.hardskills__img');
+const header = document.querySelector('.menu');
 
 
 function revealElement() {
@@ -19,6 +20,12 @@ function revealElement() {
   });
 }
 
+/* function revealHeader() {
+    let scrollPosition = window.innerHeight + window.scrollY;
+    if (scrollPosition > window.innerHeight) {
+      header.classList.add('header-is-on-screen');
+    }
+} */
 
 window.addEventListener('scroll', function(){
   revealElement();
