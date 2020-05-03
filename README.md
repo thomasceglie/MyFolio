@@ -2,4 +2,4 @@
 ## This is my portfolio repository
 
 #### Is actually in construction :construction: :wrench:
-#### Link is comming (as fast as aliexpress) :truck::package:
+#### Link : https://thomas-ceglie.netlify.app/ :mag::triangular_flag_on_post:
