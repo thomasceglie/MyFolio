@@ -1,5 +1,5 @@
 {
-  "name": "MyFolio",
+  "name": "myfolio",
   "version": "1.0.0",
   "description": "This is my portfolio repository",
   "main": "index.js",
@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/thomasceglie/MyFolio#readme",
   "devDependencies": {
+    "parcel": "^1.12.4",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.26.5"
-  }
+  },
+  "dependencies": {}
 }

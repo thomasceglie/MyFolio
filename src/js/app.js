@@ -4,6 +4,11 @@ const skillsUp = document.querySelector('.skills__up');
 const skillsDown = document.querySelector('.skills__down');
 const softSkills = document.querySelector('.soft-skills');
 const hardSkills = document.querySelector('.hard-skills');
+const skillTop = document.querySelector('.me__hover-top');
+const skillBottom = document.querySelector('.me__hover-bottom');
+const softImg = document.querySelector('.softskills__img');
+const hardImg = document.querySelector('.hardskills__img');
+
 
 function revealElement() {
   elementsAppear.forEach(function(element) {
@@ -23,15 +28,29 @@ window.onunload = function () {
   window.scrollTo(0, 0);
 }
 
-skillsDown.addEventListener('mouseenter', function () {
-  softSkills.classList.add('skill-is-inactive');
-  hardSkills.classList.add('skill-is-active');
-});
-
 skillsUp.addEventListener('mouseenter', function () {
   softSkills.classList.remove('skill-is-inactive');
   hardSkills.classList.remove('skill-is-active');
+  skillTop.classList.remove('skill-active');
+  skillBottom.classList.add('skill-active');
+  skillBottom.classList.remove('skill-inactive');
+  hardImg.classList.add('skill-is-inactive');
+  hardImg.classList.remove('skill-is-active');
+  softImg.classList.add('skill-is-active');
+  softImg.classList.remove('skill-is-inactive');
 });
+
+skillsDown.addEventListener('mouseenter', function () {
+  softSkills.classList.add('skill-is-inactive');
+  hardSkills.classList.add('skill-is-active');
+  skillTop.classList.add('skill-active');
+  skillTop.classList.remove('skill-inactive');
+  skillBottom.classList.add('skill-inactive');
+  softImg.classList.add('skill-is-inactive');
+  hardImg.classList.add('skill-is-active');
+  hardImg.classList.remove('skill-is-inactive');
+});
+
 
 /* headerItems.forEach(function(e) {
   e.addEventListener('click', function() {
