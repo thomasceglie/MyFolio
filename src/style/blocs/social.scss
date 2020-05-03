@@ -3,12 +3,11 @@
   position: fixed;
   bottom: 25px;
   right: 25px;
-  opacity: 70%;
   &__link:nth-child(1) {
     margin-bottom: 20px;
   }
   &__logo {
   width: 45px;
-  fill: $white;
+  fill: #4D4D4D;
   }
 }
