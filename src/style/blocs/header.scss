@@ -16,14 +16,12 @@
     }
     & > .item:nth-child(2) {
       font-size: 1.875rem;
-      color: $white;
-      opacity: 30%;
+      color: #4D4D4D;
       font-weight: 200;
     }
     & > .item:nth-child(3) {
       font-size: 1.875rem;
-      color: $white;
-      opacity: 30%;
+      color: #4D4D4D;
       font-weight: 200;
     }
   }
@@ -34,8 +32,7 @@
     padding-top: 3vh;
       & > .item:nth-child(1) {
         font-size: 1.875rem;
-        color: $white;
-        opacity: 30%;
+        color: #4D4D4D;
         font-weight: 200;
       }
       & > .item:nth-child(2) {
@@ -45,8 +42,7 @@
       }
       & > .item:nth-child(3) {
         font-size: 1.875rem;
-        color: $white;
-        opacity: 30%;
+        color: #4D4D4D;
         font-weight: 200;
       }
     }
@@ -57,14 +53,12 @@
     padding-top: 3vh;
       & > .item:nth-child(1) {
         font-size: 1.875rem;
-        color: $white;
-        opacity: 30%;
+        color: #4D4D4D;
         font-weight: 200;
       }
       & > .item:nth-child(2) {
         font-size: 1.875rem;
-        color: $white;
-        opacity: 30%;
+        color: #4D4D4D;
         font-weight: 200;
       }
       & > .item:nth-child(3) {
@@ -73,8 +67,4 @@
         font-weight: 200;
       }
     }
-}
-
-.is-active {
-  background-color: red;
 }

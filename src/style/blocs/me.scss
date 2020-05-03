@@ -93,20 +93,19 @@
   }
   & .main-word {
     background-color: $white;
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 5px;
+    box-shadow: 0px 0px 8px rgba($color: #FFFFFF, $alpha: 0.5);
   }
   & .first-word {
     font-size: 1.2rem;
     font-weight: 200;
-    opacity: 33%;
-    color: $white;
+    color: #787878;
   }
   & .second-word {
     font-size: 1.8rem;
     font-weight: 400;
-    opacity: 66%;
-    color: $white;
+    color: #D2D2D2;
   }
 }
 
