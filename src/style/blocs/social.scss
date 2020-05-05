@@ -9,5 +9,8 @@
   &__logo {
   width: 45px;
   fill: #4D4D4D;
+  &:hover {
+    fill: $white;
+  }
   }
 }
